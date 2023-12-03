@@ -34,6 +34,7 @@ body {
     position: relative;
 }
 
+
 .intro h1,
 .intro p {
     position: absolute;
@@ -47,13 +48,17 @@ body {
     margin: 0;
     font-size: 36px;
     color: #fff;
+    font-family: 'Dancing Script', cursive;
 }
 
 .intro p {
     top: 40%;
     font-size: 18px;
     color: #333030;
+    font-family: 'Dancing Script';
 }
+
+
 
 
 /* header */
@@ -133,26 +138,13 @@ body {
     border-radius: 15px; /* Радиус закругления углов (если нужно) */
 }
 
-/* Добавьте стили для контейнера слайдера */
-.slider-container {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-/* Добавьте стили для изображений слайдера */
-.slider-container img {
-    width: 200px; /* Задайте желаемую ширину изображения */
-    height: auto;
-    transition: transform .32s ease-in-out;
-    border-radius: 15px; /* Радиус закругления углов */
-     display: none;
-}
-
-/* Добавьте стили для увеличения изображения при наведении */
-.slider-container img:hover {
-    transform: scale(1.1);
+.second__page {
+    width: 100%;
+    height: 100vh;
+    background: url("../IMG/") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 /* Добавим медиа-запросы для адаптивности */
