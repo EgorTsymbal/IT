@@ -545,10 +545,7 @@ body {
   }  
   
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 .fifth__head {
     padding: 35px 0;
@@ -651,4 +648,29 @@ body {
     z-index: -1;
   }
   
-  
+
+.fifth__head {
+    padding: 35px 0;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.fifth__subtitle {
+    top: 20px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 24px;
+    color: #454334;
+}
+
+.route-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.route-description p {
+    color: #666;
+    line-height: 1.6;
+}
