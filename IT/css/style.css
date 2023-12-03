@@ -142,10 +142,23 @@ body {
 .music {
     position: fixed;
     top: 10px;
-    right: 600px;
+    right: 10px;
     cursor: pointer;
     z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    width: 30px; /* начальная ширина */
+    height: 30px; /* начальная высота */
+    transform: scale(0.56); /* начальный масштаб */
 }
+
+.music:hover {
+    transform: scale(1); /* увеличиваем размер до 100% при наведении */
+}
+
+
+
+
+
 
 
 .second__page {
@@ -211,8 +224,8 @@ body {
 
 /* About */
 .about {
-    margin-left: 32px;
-    margin-right: 10px;
+    margin-left: 25px; 
+    margin-right: 25px;
     display: flex;
     justify-content: space-between;
 }
