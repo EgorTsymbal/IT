@@ -1,10 +1,25 @@
-const sliderImages = ['2.jpg', '3.jpg', '4.jpg'];
+document.addEventListener('DOMContentLoaded', function () {
+    const audio = document.getElementById('backgroundMusic');
 
-const sliderContainer = document.querySelector('.slider-container');
+    // Добавляем обработчик события click к ссылкам с классом 'scroll-link'
+    document.querySelectorAll('.scroll-link').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
 
-sliderImages.forEach((imageName, index) => {
-    const imgElement = document.createElement('img');
-    imgElement.src = `../IMG/${imageName}`;
-    imgElement.alt = `Изображение слайдера ${index + 1}`;
-    sliderContainer.appendChild(imgElement);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+                // Воспроизводить музыку
+                if (audio.paused) {
+                    audio.play();
+                }
+            }
+        });
+    });
 });
