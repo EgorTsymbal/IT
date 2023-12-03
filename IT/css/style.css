@@ -428,20 +428,22 @@ body {
 
 .about__text_per {
     width: 100%;
-    font-size: 18px;
+    font-size: 13px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -10px;
     z-index: 2;
     transform: translate3d(0, -50%, 0);
 
     opacity: 0;
 
     transition: opacity .1s linear;
+
+    font-family: 'Cedarville Cursive', cursive;
 }
 
 

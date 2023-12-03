@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const soundImage = document.getElementById('soundImage');
     const thirdTitle = document.querySelector('.third__title');
     const overlay = document.querySelector('.overlay');
+    const overlayVideo = document.getElementById('overlayVideo');
+    let hideOverlayTimeout;
 
     soundImage.addEventListener('click', function () {
         if (audio.paused) {
@@ -28,15 +30,37 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Показываем оверлей при наведении на .third__title
     thirdTitle.addEventListener('mouseover', function () {
         overlay.style.display = 'flex';
+        overlayVideo.play();
     });
 
-    // Скрываем оверлей, если курсор не находится ни над .third__title, ни над оверлеем
-    document.addEventListener('mouseout', function (event) {
-        if (!thirdTitle.contains(event.relatedTarget) && !overlay.contains(event.relatedTarget)) {
+    thirdTitle.addEventListener('mouseout', function () {
+        hideOverlayTimeout = setTimeout(function () {
             overlay.style.display = 'none';
+            // Пауза видео при скрытии оверлея
+            overlayVideo.pause();
+        }, 300);
+    });
+
+    thirdTitle.addEventListener('mousemove', function () {
+        clearTimeout(hideOverlayTimeout);
+    });
+
+    document.addEventListener('mouseout', function (event) {
+        const cursorArea = 1000; // Размер зоны, где курсор мыши может находиться, чтобы оверлей не исчезал
+
+        const isCursorInTitle = (
+            event.clientX >= thirdTitle.offsetLeft - cursorArea &&
+            event.clientX <= thirdTitle.offsetLeft + thirdTitle.offsetWidth + cursorArea &&
+            event.clientY >= thirdTitle.offsetTop - cursorArea &&
+            event.clientY <= thirdTitle.offsetTop + thirdTitle.offsetHeight + cursorArea
+        );
+
+        if (!isCursorInTitle && !overlay.contains(event.relatedTarget)) {
+            overlay.style.display = 'none';
+            // Пауза видео при скрытии оверлея
+            overlayVideo.pause();
         }
     });
 });
