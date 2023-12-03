@@ -515,6 +515,55 @@ body {
     font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
 }
 
+/* fifth page */
+.fifth__page {
+    width: 100%;
+    height: 100vh;
+    background: url("../IMG/phonpage2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+}
 
+.fifth__head {
+    padding: 35px 0;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.fifth__subtitle {
+    top: 20px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 24px;
+    color: #c9c6b5;
+}
+
+.route-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.route-description p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.route-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    flex: 0 0 calc(33.33% - 10px);
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
 
 
