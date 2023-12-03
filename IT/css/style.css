@@ -449,14 +449,50 @@ body {
 
 /* Fourth page */
 .fourth__page {
+    margin: 0 auto;
     width: 100%;
     height: 100vh;
-    background: url("../IMG/page4.jpg") center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: url("../IMG/page$.jpg") center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
     position: relative;
-    border-radius: 15px;
+    border-radius: 135px;
     z-index: 1;
+    overflow: hidden;
+}
+
+.anime_text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    position: absolute;
+    top: 45px;
+    left: 50%; /* изменено на 50% */
+    transform: translateX(-50%); /* добавлено для центрирования */
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.anime_text.active .text {
+    opacity: 1;
+}
+
+.bottom-left {
+    bottom: 63%;
+    left: 55px;
+}
+
+.top-right {
+    top: 10%;
+    right: 55px;
 }
 
 

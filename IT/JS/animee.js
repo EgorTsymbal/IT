@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const thirdTitle = document.querySelector('.third__title');
     const overlay = document.querySelector('.overlay');
     const overlayVideo = document.getElementById('overlayVideo');
+    const animeText = document.querySelector('.anime_text');
+
     let hideOverlayTimeout;
 
     soundImage.addEventListener('click', function () {
@@ -38,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
     thirdTitle.addEventListener('mouseout', function () {
         hideOverlayTimeout = setTimeout(function () {
             overlay.style.display = 'none';
-            // Пауза видео при скрытии оверлея
             overlayVideo.pause();
         }, 300);
     });
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.addEventListener('mouseout', function (event) {
-        const cursorArea = 1000; // Размер зоны, где курсор мыши может находиться, чтобы оверлей не исчезал
+        const cursorArea = 1000;
 
         const isCursorInTitle = (
             event.clientX >= thirdTitle.offsetLeft - cursorArea &&
@@ -59,8 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!isCursorInTitle && !overlay.contains(event.relatedTarget)) {
             overlay.style.display = 'none';
-            // Пауза видео при скрытии оверлея
             overlayVideo.pause();
         }
+    });
+
+    document.querySelector('.icon').addEventListener('click', function () {
+        animeText.classList.toggle('active');
     });
 });
