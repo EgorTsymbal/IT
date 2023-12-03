@@ -139,12 +139,16 @@ body {
 }
 
 .second__page {
-    width: 100%;
-    height: 100vh;
-    background: url("../IMG/") center no-repeat;
+    width: 25%;
+    height: 10vh;
+    background: url("../IMG/page2.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
+    
+    min-width: 173px;
+    min-height: 216px;
+
 }
 
 /* Добавим медиа-запросы для адаптивности */
