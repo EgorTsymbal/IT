@@ -172,19 +172,6 @@ body {
     z-index: 1;
 }
 
-.page2 {
-    width: 100%;
-    height: 100vh;
-    background: url("../IMG/page2.jpg") center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    position: relative;
-    border-radius: 15px;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    z-index: 2;
-}
 
 .second__header {
     padding: 35px 0;
@@ -291,7 +278,7 @@ body {
 
 .stat__item {
     flex: 1 1 0;
-    padding: 70px 25px;
+    padding: 50px 25px;
     border-left: 1px solid #b5eae0;
 
     text-align: center;
@@ -304,7 +291,7 @@ body {
 
 .stat__count {
     margin-bottom: 10px;
-    
+
     font-size: 72px;
     font-weight: 700;
     line-height: 1;
@@ -316,9 +303,52 @@ body {
 }
 
 
+.third__page {
+    width: 100%;
+    height: 100vh;
+    background: url("../IMG/grad_1.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+}
 
+.third__header {
+    padding: 35px 0;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.third__subtitle {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 24px;
+    color: #333;
+}
 
+.third__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.third__title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 27px auto 0;
+
+    background-color: #f38181;
+}
+
+.third__text {
+    font-size: 15px;
+    color: #ffffff;
+}
 
 
 
