@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.querySelector('.overlay');
     const overlayVideo = document.getElementById('overlayVideo');
     const animeText = document.querySelector('.anime_text');
+    const reserveButton = document.getElementById('reserveButton'); // Добавляем кнопку
 
     let hideOverlayTimeout;
 
@@ -67,4 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.icon').addEventListener('click', function () {
         animeText.classList.toggle('active');
     });
+
+    // Получаем номер страницы из глобальной переменной
+    const currentPage = window.currentPage || 1; // Значение по умолчанию, если переменная не определена
+
+    // Проверяем, начиная с 4-й страницы
+    if (currentPage >= 4) {
+        reserveButton.style.display = 'block';
+    }
 });

@@ -7,6 +7,11 @@ body {
     
 }
 
+.fon {
+    width: auto;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
 *,
 *:before,
 *:after {
@@ -270,6 +275,7 @@ body {
 
 .statistics {
     background-color: #95e1d3;
+    border-radius: 80px;
 }
 
 .stat {
@@ -310,7 +316,7 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 15px;
+    border-radius: 120px;
     z-index: 1;
 }
 
@@ -456,7 +462,7 @@ body {
     -webkit-background-size: contain;
     background-size: contain;
     position: relative;
-    border-radius: 135px;
+    border-radius: 250px;
     z-index: 1;
     overflow: hidden;
 }
@@ -527,6 +533,11 @@ body {
     z-index: 1;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .fifth__head {
     padding: 35px 0;
     width: 100%;
@@ -539,12 +550,13 @@ body {
     top: 20px;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 24px;
-    color: #c9c6b5;
+    color: #454334;
 }
 
 .route-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 .route-description p {
@@ -552,18 +564,49 @@ body {
     line-height: 1.6;
 }
 
-.route-gallery {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.book-button {
+    /* Стили для кнопки "Забронировать" */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #efd616; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Дополнительные стили, в зависимости от дизайна сайта */
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.gallery-image {
-    flex: 0 0 calc(33.33% - 10px);
-    height: 100px;
+.book-button::after {
+    /* Стили для дополнительного содержимого от себя (может быть иконка, текст и т.д.) */
+    content: '>>'; /* Замените это на ваше содержимое */
+    margin-left: 5px; /* Расстояние от кнопки до дополнительного содержимого */
+}
+
+
+/* Paralax */
+
+.layers__item {
+    position: absolute;
+    inset: -5vw;
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
+.layer-1 {
+    transform: translateZ(-55px) scale(1.06);
+}
+.layers__container {
+    height: 100vh;
+    min-height: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    will-change: transform;
+    transition: transform var(--transition);
+}
