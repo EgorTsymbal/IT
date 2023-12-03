@@ -469,7 +469,8 @@ body {
 
 .icon {
     position: absolute;
-    top: 45px;
+    font-size: 50px;
+    top: 70px;
     left: 50%; /* изменено на 50% */
     transform: translateX(-50%); /* добавлено для центрирования */
     cursor: pointer;
@@ -486,14 +487,34 @@ body {
 }
 
 .bottom-left {
-    bottom: 63%;
+    position: absolute;
+    bottom: 15%;
     left: 55px;
+    width: 380px;
+    height: 250px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    font-size: 14px;
 }
 
-.top-right {
-    top: 10%;
+
+.text.top-right {
+    position: absolute;
+    top: 12%;
     right: 55px;
+    width: 380px;
+    height: 250px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Добавлено, чтобы добавить прокрутку, если текст не помещается */
+    font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
 }
+
 
 
 
