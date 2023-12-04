@@ -47,23 +47,27 @@
 .intro p {
     position: absolute;
     top: 35%;
-    left: 22%;
-    transform: translate(-50%, -50%);
+    left: 20%;
     text-align: center;
 }
 
 .intro h1 {
-    margin: 0;
+    text-align: left;
+    left: 8%;
+    top: 22%;
     font-size: 36px;
     color: #fff;
     font-family: 'Kaushan Script', cursive;
 }
 
 .intro p {
-    top: 40%;
+    text-align: left;
+    left: 20%;
+    top: 30%;
     font-size: 18px;
     color: #333030;
     font-family: 'Kaushan Script';
+    font-size: 35px;
 }
 
 
@@ -88,11 +92,9 @@
 
 /* nav */
 .logo, nav a {
-    padding: 10px 20px; /* Задайте желаемый внутренний отступ */
-    margin: 10px 10px 10px; /* Задайте желаемый внешний отступ между элементами */
-    border: 2px solid #333; /* Цвет и толщина границы */
-    border-radius: 15px; /* Радиус закругления углов */
     text-decoration: none;
+    margin-left: 10%;
+    margin-top: 1%;
     color: #333; /* Цвет текста */
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Добавление тени */
     font-size: 14px;
@@ -100,7 +102,13 @@
     color: rgb(63, 12, 114);
 }
 
+.nav {
+    margin-bottom: 80%;
+    margin-left: 8%;
+}
+
 .logo {
+
     font-size: 65px;
     font-weight: 700;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Добавление тени */
@@ -112,6 +120,10 @@
     margin: 0 10px;
     color: rgb(63, 12, 114);
     position: relative;
+    padding: 10px 20px; /* Задайте желаемый внутренний отступ */
+    margin: 10px 10px 10px; /* Задайте желаемый внешний отступ между элементами */
+    border: 2px solid rgb(63, 12, 114); /* Цвет и толщина границы */
+    border-radius: 15px; /* Радиус закругления углов */
 
     transition: color .2s linear;
 }
@@ -132,7 +144,7 @@
 
 .nav__link:hover {
     color: #fce38a;
-    background-color: #494242;
+    background-color: rgb(63, 12, 114);
 }
 
 .nav__link:hover:after {
@@ -463,7 +475,6 @@
     -webkit-background-size: contain;
     background-size: contain;
     position: relative;
-    border-radius: 135px;
     z-index: 1;
     overflow: hidden;
 }
@@ -472,12 +483,14 @@
     position: relative;
     width: 100%;
     height: 100%;
+
+
 }
 
 .icon {
     position: absolute;
     font-size: 50px;
-    top: 70px;
+    top: 100px;
     left: 50%; /* изменено на 50% */
     transform: translateX(-50%); /* добавлено для центрирования */
     cursor: pointer;
@@ -493,33 +506,38 @@
     opacity: 1;
 }
 
-.bottom-left {
+.text.bottom-left {
     position: absolute;
     bottom: 15%;
-    left: 55px;
-    width: 380px;
-    height: 250px;
+    left: -1% ;
+    width: 400px;
+    height: 290px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
-    font-size: 14px;
+    font-size: 18px;
+    transform: scaleX(-1);
+}
+
+.mirror {
+    transform: scaleX(-1);
 }
 
 
 .text.top-right {
     position: absolute;
     top: 12%;
-    right: 55px;
-    width: 380px;
-    height: 250px;
+    right: -1%;
+    width: 400px;
+    height: 267px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     overflow-y: auto; /* Добавлено, чтобы добавить прокрутку, если текст не помещается */
-    font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
+    font-size: 18px; /* Регулируйте размер текста по вашему вкусу */
 }
 
 /* fifth page */
