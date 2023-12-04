@@ -204,7 +204,7 @@
 
 .second__subtitle {
     font-family: 'Cedarville Cursive', cursive;
-    font-size: 24px;
+    font-size: 32px;
     color: #333;
 }
 
@@ -226,7 +226,7 @@
 }
 
 .second__text {
-    font-size: 15px;
+    font-size: 26px;
     color: #767474;
 }
 
@@ -348,7 +348,7 @@
 
 .third__subtitle {
     font-family: 'Cedarville Cursive', cursive;
-    font-size: 24px;
+    font-size: 32px;
     color: #c9c6b5;
 }
 
@@ -400,11 +400,9 @@
 
 
 .third__text {
-    font-size: 15px;
     color: #e0ddc8;
     top: 40%;
-    font-size: 18px;
-    font-family: 'Cedarville Cursive', cursive;
+    font-size: 26px;
 }
 
 
@@ -593,7 +591,8 @@
 
 .route-description p {
     color: #666;
-    line-height: 1.6;
+    text-align: center;
+    font-size: 26px;
 }
 
 .book-button {
@@ -1038,47 +1037,63 @@ iframe {
 }
 
 
-
-
-
-
-
-
-
-
-.line {
-    background-color: #95e1d3;
-    border-radius: 80px;
+.section {
+    padding: 80px 0;
 }
 
-.line__stat {
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section__subtitle {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.section__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.section__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: #f38181;
+}
+
+
+/* Contacts */
+
+.contacts {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts__item {
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+}
+
+.contacts__icon {
+    width: 110px;
+    height: 110px;
+
+    position: absolute;
+
+    border-radius: 50%;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
-
-.line__stat__item {
-    flex: 1 1 0;
-    padding: 10px 25px;
-    border-left: 1px solid #b5eae0;
-
-    text-align: center;
-    color: #fff;
-}
-
-.line__stat__item:last-child {
-    border-right: 1px solid #b5eae0;
-}
-
-.line__stat__count {
-    margin-bottom: 10px;
-
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 1;
-}
-
-.line__stat__text {
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
