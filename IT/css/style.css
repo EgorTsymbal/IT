@@ -1,17 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15p;
     line-height: 1.6;
     color: rgb(4, 4, 4);
-
-
-
-}
-
-.fon {
-    width: auto;
-    background: linear-gradient(to bottom, #f38181, #fce38a);
 }
 
 *,
@@ -1121,4 +1119,95 @@ iframe {
     margin: 15px;
     background-color: #f38181;
 
+}
+
+/* Оригинальные стили */
+
+@media only screen and (max-width: 768px) {
+    .intro h1,
+    .intro p {
+        top: 25%;
+        left: 10%;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+        left: 5%;
+        top: 18%;
+    }
+
+    .intro p {
+        font-size: 14px;
+        left: 10%;
+        top: 25%;
+    }
+
+    /* Стили для адаптации на меньших экранах */
+
+    .header__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-bottom: 30%;
+        margin-left: 0;
+    }
+
+    .logo {
+        font-size: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .nav__link {
+        margin: 6px;
+        padding: 8px 16px;
+    }
+
+    .music {
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .about {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Адаптация для блока "about__m" */
+    .about_m {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about__per {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Адаптация для блока "trans" */
+    .trans {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .trans__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* Добавьте другие стили, необходимые для адаптации на меньших экранах */
 }
