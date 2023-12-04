@@ -699,7 +699,7 @@
     width: 380px;
     position: relative;
 
-    background-color: #e0ddc8;
+    background-color: #d8b95b;
 }
 
 .person:hover .about__self {
@@ -716,7 +716,7 @@
 }
 
 .about__self {
-    background: linear-gradient(to bottom, #8516a1, #385cbd);
+    background: linear-gradient(to bottom, #16f3be, #3c8bf4);
 
     transition: transform .1s linear;
 }
@@ -728,10 +728,10 @@
 
 .text_per {
     width: 100%;
-    font-size: 13px;
+    font-size: 12px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 300;
     text-align: center;
     position: absolute;
     top: 50%;
