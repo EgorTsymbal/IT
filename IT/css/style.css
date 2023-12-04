@@ -101,7 +101,7 @@
 }
 
 .logo {
-    font-size: 23px;
+    font-size: 65px;
     font-weight: 700;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Добавление тени */
 }
@@ -876,6 +876,27 @@ iframe {
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
+}
+
+
+.last__overlay {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 253, 208, 0.8); /* Цвет кремового прямоугольника с полупрозрачностью */
+    padding: 10px;
+    border-top-left-radius: 10px; /* Закругление верхнего левого угла */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.last__overlay:hover {
+    background-color: rgba(255, 253, 208, 1); /* Цвет кремового прямоугольника при наведении */
+}
+
+.last__overlay-text {
+    color: #333; /* Цвет текста */
+    font-size: 16px;
 }
 
 
