@@ -759,14 +759,16 @@
     background-size: cover;
     position: relative;
     border-radius: 80px;
+    margin-top: 120px;
 }
 
 .seventh__subtitle {
-    top: 10px;
     text-align: center;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 56px;
     color: #454334;
+    margin-top: 120px; 
+    margin-bottom: 140px;
 }
 
 .feedback {
@@ -789,9 +791,11 @@
 }
 
 .eight__title {
-bottom: -120px;
 text-align: center;
 font-size: 36px;
+font-family: 'Kaushan Script', cursive;
+margin-top: 120px; 
+margin-bottom: 80px;
 }
 
 iframe {
