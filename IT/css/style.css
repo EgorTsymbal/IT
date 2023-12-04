@@ -1,9 +1,3 @@
-.html {
-    height: 100%;
-    overflow: hidden;
-}
-
-
 .body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -767,8 +761,8 @@
     font-family: 'Cedarville Cursive', cursive;
     font-size: 56px;
     color: #454334;
-    margin-top: 120px; 
-    margin-bottom: 140px;
+    margin-top: 60px; 
+    margin-bottom: 60px;
 }
 
 .feedback {
@@ -794,8 +788,8 @@
     text-align: center;
     font-size: 36px;
     font-family: 'Kaushan Script', cursive;
-    margin-top: 120px; 
-    margin-bottom: 80px;
+    margin-top: 60px; 
+    margin-bottom: 60px;
 }
 
 iframe {
@@ -813,6 +807,7 @@ iframe {
     background-size: cover;
     position: relative;
     border-radius: 115px;
+    z-index: 1;
 }
 
 
@@ -822,18 +817,46 @@ iframe {
 
 
 .last__title {
+    text-align: center;
     font-size: 26px;
     font-family: 'Kaushan Script', cursive;
-    text-align: left;
 }
 
 
 .last__bottom-left {
     position: absolute;
-    bottom: 15%;
+    bottom: 65px;
     left: 55px;
     width: 380px;
-    height: 250px;
+    height: 280px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+
+.last__top-left {
+    position: absolute;
+    top: 85px;
+    left: 105px;
+    width: 395px;
+    height: 280px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
+}
+
+
+.last__bottom-right {
+    position: absolute;
+    bottom: 85px;
+    left: 485px;
+    width: 380px;
+    height: 270px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
@@ -844,10 +867,10 @@ iframe {
 
 .last__top-right {
     position: absolute;
-    top: 12%;
-    right: 55px;
+    top: 65px;
+    left: 550px;
     width: 380px;
-    height: 250px;
+    height: 280px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
@@ -856,6 +879,11 @@ iframe {
 }
 
 
+
+.h_text {
+    font-family: 'Dancing Script', cursive;
+}
+
 .line {
     background-color: #95e1d3;
     border-radius: 80px;
@@ -863,6 +891,7 @@ iframe {
 
 .line__stat {
     display: flex;
+    z-index: 1;
 }
 
 .line__stat__item {
