@@ -754,15 +754,19 @@
 .seventh__header {
     width: 100%;
     height: 100vh;
-    background: url("../IMG/") center no-repeat;
+    background: url("../IMG/sevenyh.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 15px;
+    border-radius: 80px;
 }
 
 .seventh__subtitle {
-
+    top: 10px;
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 56px;
+    color: #454334;
 }
 
 .feedback {
@@ -770,10 +774,30 @@
 }
 
 .seventh__title {
-    
+    top: 10px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 26px;
+    color: #454334;
 }
 
 
+/* Map */
+
+.map {
+
+}
+
+.eight__title {
+bottom: -120px;
+text-align: center;
+font-size: 36px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
 
 /* Last page */
 
