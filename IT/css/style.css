@@ -658,16 +658,16 @@
   }
   
 
-.fifth__head {
-    padding: 35px 0;
+.sixth__head {
+    padding: 10px 0;
     width: 100%;
-    max-width: 520px;
+    max-width: 480px;
     margin: 0 auto; 
     text-align: center;
 }
 
-.fifth__subtitle {
-    top: 20px;
+.sixth__subtitle {
+    top: 10px;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 24px;
     color: #454334;
@@ -686,6 +686,65 @@
 
 
 
+/* Person */
+
+.under {
+    margin-left: 25px; 
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.person {
+    width: 380px;
+    position: relative;
+
+    background-color: #e0ddc8;
+}
+
+.person:hover .about__self {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+
+.person:hover .about__self img {
+    opacity: .1;
+}
+
+.person:hover .text_per {
+    opacity: 1;
+}
+
+.about__self {
+    background: linear-gradient(to bottom, #8516a1, #385cbd);
+
+    transition: transform .1s linear;
+}
+
+.about__self img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.text_per {
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    opacity: 0;
+
+    transition: opacity .1s linear;
+
+    font-family: 'Cedarville Cursive', cursive;
+}
 
 
 
@@ -712,6 +771,7 @@
     transform-style: inherit;
     width: 100vh;
     color: #fff;
+    margin: 0;
 }
 
 .last__page__hedder::before {
@@ -733,9 +793,45 @@
     z-index: -1;
     transform-origin: center;
     min-width: 100vh;
-    background-image: url("../IMG/1.jpg");
+    background-image: url("../IMG/last_page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     transform: translateZ(-1px) scale(2);
+}
+
+
+.line {
+    background-color: #95e1d3;
+    border-radius: 80px;
+}
+
+.line__stat {
+    display: flex;
+}
+
+.line__stat__item {
+    flex: 1 1 0;
+    padding: 10px 25px;
+    border-left: 1px solid #b5eae0;
+
+    text-align: center;
+    color: #fff;
+}
+
+.line__stat__item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.line__stat__count {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.line__stat__text {
+    font-size: 14px;
+    text-transform: uppercase;
 }
