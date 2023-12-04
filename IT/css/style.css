@@ -39,7 +39,8 @@
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 
@@ -187,7 +188,8 @@
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 0px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     z-index: 1;
 }
 
@@ -289,6 +291,8 @@
 
 .statistics {
     background-color: #95e1d3;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 .stat {
@@ -329,7 +333,8 @@
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 120px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     z-index: 1;
 }
 
@@ -468,7 +473,6 @@
 
 /* Fourth page */
 .fourth__page {
-    margin: 0 auto;
     width: 100%;
     height: 100vh;
     background: url("../IMG/page$.jpg") center no-repeat;
@@ -477,14 +481,13 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border-radius: 100px;
 }
 
 .anime_text {
     position: relative;
     width: 100%;
     height: 100%;
-
-
 }
 
 .icon {
@@ -769,7 +772,8 @@
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 80px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     margin-top: 120px;
 }
 
@@ -823,7 +827,8 @@ iframe {
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 115px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
     z-index: 1;
 }
 
@@ -970,7 +975,7 @@ iframe {
 }
 
 .translit__text {
-    font-size: 15px;
+    font-size: 20px;
     color: #767474;
     text-align: center;
 }
@@ -1022,13 +1027,13 @@ iframe {
     font-weight: 500;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: -10px;
     z-index: 2;
     transform: translate3d(0, -50%, 0);
 
     opacity: 0;
-
+    font-family: 'Cedarville Cursive', cursive;
     transition: opacity .1s linear;
 }
 
