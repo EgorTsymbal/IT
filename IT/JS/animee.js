@@ -33,23 +33,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    thirdTitle.addEventListener('mouseover', function () {
+    thirdTitle.addEventListener('mouseenter', function () {
         overlay.style.display = 'flex';
         overlayVideo.play();
     });
-
-    thirdTitle.addEventListener('mouseout', function () {
+    
+    thirdTitle.addEventListener('mouseleave', function () {
         hideOverlayTimeout = setTimeout(function () {
             overlay.style.display = 'none';
             overlayVideo.pause();
-        }, 300);
+        }, 3000);
     });
+    
 
     thirdTitle.addEventListener('mousemove', function () {
         clearTimeout(hideOverlayTimeout);
     });
 
-    document.addEventListener('mouseout', function (event) {
+    document.addEventListener('mouseleave', function (event) {
         const cursorArea = 1000;
 
         const isCursorInTitle = (
