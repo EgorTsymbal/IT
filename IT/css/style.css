@@ -1,10 +1,18 @@
-body {
+.html {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15p;
     line-height: 1.6;
     color: rgb(4, 4, 4);
-    
+
+
+
 }
 
 .fon {
@@ -77,6 +85,7 @@ body {
     right: 0;
     z-index: 1000;
 }
+
 
 .header__inner {
     display: flex;
@@ -673,4 +682,60 @@ body {
 .route-description p {
     color: #666;
     line-height: 1.6;
+}
+
+
+
+
+
+
+/* Last page */
+
+.last__page {
+    /* For Paralax */
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /* */
+    
+    font-family: sans-serif;
+}
+
+.last__page__hedder {
+    box-sizing: border-box;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 20%;
+    transform-style: inherit;
+    width: 100vh;
+    color: #fff;
+}
+
+.last__page__hedder::before {
+    box-sizing: border-box;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 10%;
+    transform-style: inherit;
+    width: 100vh;
+
+
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transform-origin: center;
+    min-width: 100vh;
+    background-image: url("../IMG/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: translateZ(-1px) scale(2);
 }
