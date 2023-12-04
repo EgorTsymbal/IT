@@ -1088,8 +1088,8 @@ iframe {
 }
 
 .contacts__icon {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 
     position: absolute;
 
@@ -1097,6 +1097,8 @@ iframe {
     top: 0;
     left: 40px;
     z-index: 1;
+    border: 2px solid #f38181; /* Цвет и толщина границы */
+
 }
 
 .contacts__name {
