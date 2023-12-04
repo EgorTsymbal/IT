@@ -791,11 +791,11 @@
 }
 
 .eight__title {
-text-align: center;
-font-size: 36px;
-font-family: 'Kaushan Script', cursive;
-margin-top: 120px; 
-margin-bottom: 80px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 120px; 
+    margin-bottom: 80px;
 }
 
 iframe {
@@ -808,14 +808,52 @@ iframe {
 .last__page {
     width: 100%;
     height: 100vh;
-    background: url("../IMG/1.jpg") center no-repeat;
+    background: url("../IMG/lp.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-radius: 15px;
+    border-radius: 115px;
 }
 
 
+.last__page__hedder {
+
+}
+
+
+.last__title {
+    font-size: 26px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: left;
+}
+
+
+.last__bottom-left {
+    position: absolute;
+    bottom: 15%;
+    left: 55px;
+    width: 380px;
+    height: 250px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+
+.last__top-right {
+    position: absolute;
+    top: 12%;
+    right: 55px;
+    width: 380px;
+    height: 250px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
+}
 
 
 .line {
@@ -852,3 +890,4 @@ iframe {
     font-size: 14px;
     text-transform: uppercase;
 }
+
