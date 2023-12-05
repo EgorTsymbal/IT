@@ -632,7 +632,8 @@
     height: 100vh;
     position: relative;
     border-radius: 15px;
-    z-index: 0;
+    z-index: 1;
+    overflow: hidden;
   }
   
   .sixth__page::before {
