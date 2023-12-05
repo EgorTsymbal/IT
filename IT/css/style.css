@@ -90,19 +90,19 @@
 
 /* nav */
 .logo, nav a {
+    display: inline-block;
     text-decoration: none;
+    flex-wrap: wrap;
     margin-left: 10%;
     margin-top: 1%;
     color: #333; 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
     font-size: 14px;
-    text-transform: uppercase;
     color: rgb(63, 12, 114);
 }
 
 .nav {
-    margin-bottom: 80%;
-    margin-left: 6%;
+    text-align: right;
 }
 
 .logo {
@@ -110,11 +110,13 @@
     font-size: 65px;
     font-weight: 700;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+    display: block;
+    margin-top: auto;
 }
 
 .nav__link {
-    display: inline-block;
-    vertical-align: top;
+
+    
     margin: 0 10px;
     color: rgb(63, 12, 114);
     position: relative;
@@ -127,13 +129,13 @@
 }
 
 .nav__link::after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 2px;
-    display: none;
+    
 
-    background-color: #fce38a; 
+
     position: absolute;
     top: 100%;
     left: 0;
@@ -229,8 +231,10 @@
 .about {
     margin-left: 25px; 
     margin-right: 25px;
-    display: flex;
     justify-content: space-between;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about__item {
@@ -418,6 +422,7 @@
     margin-left: 25px; 
     margin-right: 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -495,7 +500,7 @@
 .icon {
     position: absolute;
     font-size: 50px;
-    top: 100px;
+    top: 1%;
     left: 50%;
     transform: translateX(-50%); /* добавлено для центрирования */
     cursor: pointer;
@@ -685,6 +690,7 @@
     margin-left: 25px; 
     margin-right: 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -715,8 +721,9 @@
 }
 
 .about__self img {
-    display: block;
+    display: flex;
     transition: opacity .1s linear;
+    
 }
 
 .text_per {
@@ -818,60 +825,69 @@ iframe {
     font-family: 'Kaushan Script', cursive;
 }
 
+.last__text {
+    flex-wrap: wrap;
+    display: flex;
+}
+
 
 .last__bottom-left {
     position: absolute;
-    bottom: 65px;
-    left: 55px;
+    bottom: 2%;
+    left: 3%;
     width: 380px;
     height: 280px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     font-size: 14px;
+    overflow-y: auto;
 }
 
 
 .last__top-left {
     position: absolute;
-    top: 85px;
-    left: 105px;
+    top: 2%;
+    left: 6%;
     width: 395px;
-    height: 280px;
-    padding: 20px;
+    height: 300px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
+    font-size: 14px; 
+    overflow-y: auto;
 }
 
 
 .last__bottom-right {
     position: absolute;
-    bottom: 85px;
-    left: 485px;
+    bottom: 1.7%;
+    right: 7%;
     width: 380px;
-    height: 270px;
-    padding: 20px;
+    height: 280px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     font-size: 14px;
+    overflow-y: auto;
 }
 
 
 .last__top-right {
     position: absolute;
-    top: 65px;
-    left: 550px;
+    top: 3%;
+    right: 8%;
     width: 380px;
     height: 280px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    font-size: 14px; /* Регулируйте размер текста по вашему вкусу */
+    font-size: 14px; 
+    overflow-y: auto;
 }
 
 
@@ -935,11 +951,12 @@ iframe {
     text-align: center;
 }
 
-/* About */
+/* trans */
 .trans {
     margin-left: 25px; 
     margin-right: 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1142,7 +1159,7 @@ button:hover {
 
 /* Оригинальные стили */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
     .intro h1,
     .intro p {
         top: 25%;
@@ -1152,13 +1169,13 @@ button:hover {
     .intro h1 {
         font-size: 24px;
         left: 5%;
-        top: 18%;
+        top: 30%;
     }
 
     .intro p {
         font-size: 14px;
-        left: 10%;
-        top: 25%;
+        left: 17%;
+        top: 45%;
     }
 
     /* Стили для адаптации на меньших экранах */
@@ -1205,28 +1222,117 @@ button:hover {
         margin-bottom: 30px;
     }
 
-    /* Адаптация для блока "about__m" */
-    .about_m {
-        flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
+    /* Адаптация для блока "second__page" */
+
+    .second__page {
+       height: auto;
     }
 
-    .about__per {
-        width: 100%;
-        margin-bottom: 30px;
+    .about__img img {
+        width: 760px;
     }
 
-    /* Адаптация для блока "trans" */
-    .trans {
-        flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
+    .containe_v {
+        width: 480px;
+        height: 200vh;
+        margin: auto;
     }
 
-    .trans__item {
-        width: 100%;
-        margin-bottom: 30px;
+    /* Адаптация для блока "third__page" */
+    
+    .third__page {
+       height: auto;
     }
-    /* Добавьте другие стили, необходимые для адаптации на меньших экранах */
+
+    .about__pt img {
+        width: 760px;
+    }
+
+
+    /* Адаптация для блока "fourth__page" */
+
+    .text.bottom-left {
+        font-size: 15px;
+        width: 220px;
+        height: 200px;
+        left: -2%;
+    }
+
+    .text.top-right {
+        font-size: 15px;
+        width: 220px;
+        height: 200px;
+        right: -2%;
+    }
+    
+    /* Адаптация для блока "fourth__page" */
+
+    .fifth__subtitle {
+        font-size: 22px;
+        top: 0;
+    }
+
+    .route-description p {
+        font-size: 12px;
+    }
+
+    .route-image{
+        max-width: 50%;
+        margin: auto;
+    }
+
+    /* Адаптация для блока "sixth__page" */
+
+    .sixth__page {
+        height: auto;
+    }
+
+    .sixth__subtitle {
+        font-size: 22px;
+    }
+
+    .map {
+        /* обновить ссылку чтоб карта была меньше */
+    }
+        
+    /* Адаптация для блока "last__page" */
+    .last__bottom-left {
+        width: 220px;
+        height: 200px;
+    }
+
+    .last__bottom-right {
+        width: 220px;
+        height: 200px;
+    }
+
+    .last__top-left {
+        width: 220px;
+        height: 200px;
+    }
+
+    .last__top-right {
+        width: 220px;
+        height: 200px;
+    }
+
+    .h_text {
+        font-size: 10px;
+    }
+
+    /* Адаптация для блока "trans__page" */
+
+    .trans__page {
+        height: auto;
+    }
+
+    .container__form {
+        margin: auto;
+    }
+
+    /* Адаптация для блока "section section--contacts" */
+
+    .contacts__link {
+        font-size: 15px;
+    }
 }
