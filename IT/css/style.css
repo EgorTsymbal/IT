@@ -185,8 +185,6 @@
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
     z-index: 1;
 }
 
@@ -280,7 +278,7 @@
     transform: translate3d(0, -50%, 0);
 
     opacity: 0;
-
+    font-family: 'Cedarville Cursive', cursive;
     transition: opacity .1s linear;
 }
 
