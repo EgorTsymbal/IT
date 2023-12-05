@@ -321,6 +321,15 @@
 }
 
 
+.containe_v{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh; /* Это высота 100% видимой области, чтобы центрировать на всей странице */
+  border-radius: 225px;
+}
+
+
 .third__page {
     width: 100%;
     height: 100vh;
