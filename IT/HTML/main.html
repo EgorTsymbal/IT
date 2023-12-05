@@ -312,9 +312,6 @@
             
         </div>
     </div>
-    <div class="last__overlay">
-        <div class="last__overlay-text">Оставить отзыв</div>
-    </div>
 </section>
 
 <section class="trans__page" id="feedback">
@@ -357,6 +354,27 @@
     </div>
 </section>
 
+<div class="container__form">
+    <h2>Заявка на тур</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="destination">Желаемое направление тура:</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <label for="message">Дополнительные пожелания:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Отправить заявку</button>
+    </form>
+</div>
 
 
 <section class="section section--contacts" id="contacts">
