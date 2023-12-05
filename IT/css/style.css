@@ -632,7 +632,7 @@
     height: 100vh;
     position: relative;
     border-radius: 15px;
-    z-index: 1;
+    z-index: 0;
   }
   
   .sixth__page::before {
@@ -780,7 +780,7 @@
 /* Map */
 
 .map {
-
+    z-index: 1;
 }
 
 .eight__title {
