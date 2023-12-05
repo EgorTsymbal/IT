@@ -32,4 +32,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.icon').addEventListener('click', function () {
         animeText.classList.toggle('active');
     });
+
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        // Предотвращаем стандартное поведение формы (отправку данных на сервер)
+        event.preventDefault();
+
+        // Ваш код обработки данных формы здесь
+
+        // Обновляем страницу
+        window.location.reload();
+    });
+    
 });
