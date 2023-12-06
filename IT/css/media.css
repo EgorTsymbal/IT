@@ -1,0 +1,181 @@
+@media only screen and (max-width: 780px) {
+    .intro h1,
+    .intro p {
+        top: 25%;
+        left: 10%;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+        left: 5%;
+        top: 30%;
+    }
+
+    .intro p {
+        font-size: 14px;
+        left: 17%;
+        top: 45%;
+    }
+
+    /* Стили для адаптации на меньших экранах */
+
+    .header__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-bottom: 30%;
+        margin-left: 0;
+    }
+
+    .logo {
+        font-size: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .nav__link {
+        margin: 6px;
+        padding: 8px 16px;
+    }
+
+    .music {
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .about {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Адаптация для блока "second__page" */
+
+    .second__page {
+       height: auto;
+    }
+
+    .about__img img {
+        width: 760px;
+    }
+
+    .containe_v {
+        width: 480px;
+        height: 200vh;
+        margin: auto;
+    }
+
+    /* Адаптация для блока "third__page" */
+    
+    .third__page {
+       height: auto;
+    }
+
+    .about__pt img {
+        width: 760px;
+    }
+
+    .about__per {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Адаптация для блока "fourth__page" */
+
+    .text.bottom-left {
+        font-size: 15px;
+        width: 220px;
+        height: 200px;
+        left: -2%;
+    }
+
+    .text.top-right {
+        font-size: 15px;
+        width: 220px;
+        height: 200px;
+        right: -2%;
+    }
+    
+    /* Адаптация для блока "fourth__page" */
+
+    .fifth__subtitle {
+        font-size: 22px;
+        top: 0;
+    }
+
+    .route-description p {
+        font-size: 12px;
+    }
+
+    .route-image{
+        max-width: 50%;
+        margin: auto;
+    }
+
+    /* Адаптация для блока "sixth__page" */
+
+    .sixth__page {
+        height: auto;
+    }
+
+    .sixth__subtitle {
+        font-size: 22px;
+    }
+
+    .map {
+        /* обновить ссылку чтоб карта была меньше */
+    }
+        
+    /* Адаптация для блока "last__page" */
+    .last__bottom-left {
+        width: 220px;
+        height: 200px;
+    }
+
+    .last__bottom-right {
+        width: 220px;
+        height: 200px;
+    }
+
+    .last__top-left {
+        width: 220px;
+        height: 200px;
+    }
+
+    .last__top-right {
+        width: 220px;
+        height: 200px;
+    }
+
+    .h_text {
+        font-size: 10px;
+    }
+
+    /* Адаптация для блока "trans__page" */
+
+    .trans__page {
+        height: auto;
+    }
+
+    .container__form {
+        margin: auto;
+    }
+
+    /* Адаптация для блока "section section--contacts" */
+
+    .contacts__link {
+        font-size: 15px;
+    }
+}
