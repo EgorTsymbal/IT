@@ -50,11 +50,7 @@
     }
 
 
-    .about {
-        flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
-    }
+
 
     .about__item {
         width: 100%;
@@ -132,7 +128,17 @@
 
     .sixth__subtitle {
         font-size: 22px;
+    }   
+    
+    .person {
+        width: 100%;
+        margin-bottom: 10px;
     }
+
+    .about__self img{
+         width: 760px;
+     }
+ 
 
     .map {
         /* обновить ссылку чтоб карта была меньше */
@@ -166,6 +172,20 @@
     /* Адаптация для блока "trans__page" */
 
     .trans__page {
+        height: auto;
+    }
+
+    .trans__item {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .trans__img img {
+        width: auto; /* Тогда не будет на весь экран */
+        /* P.s. Так даже лучше */
+    }   
+
+    .fon_from {
         height: auto;
     }
 
