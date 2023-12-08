@@ -488,19 +488,18 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    border-radius: 100px;
+
 }
 
 .anime_text {
     position: relative;
     width: 100%;
-    height: 100%;
 }
 
 .icon {
     position: absolute;
     font-size: 50px;
-    top: 1%;
+    margin-top: 1%;
     left: 50%;
     transform: translateX(-50%); /* добавлено для центрирования */
     cursor: pointer;
@@ -516,9 +515,10 @@
     opacity: 1;
 }
 
+
 .text.bottom-left {
     position: absolute;
-    bottom: 15%;
+    margin-top: 27%;
     left: -1% ;
     width: 400px;
     height: 290px;
@@ -538,7 +538,7 @@
 
 .text.top-right {
     position: absolute;
-    top: 12%;
+    margin-top: 5%;
     right: -1%;
     width: 400px;
     height: 267px;
