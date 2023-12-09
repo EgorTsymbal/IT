@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const optionsToShow = getOptionsToShow(personCount);
 
         // Проходим по всем вариантам туров и скрываем или показываем их на основе массива optionsToShow
-        for (let i = 1; i <= 8; i++) {
+        for (let i = 0; i <= 8; i++) {
             const option = destinationSelect.querySelector(`option[value="tour${i}"]`);
             option.style.display = optionsToShow.includes(i) ? 'block' : 'none';
         }
