@@ -1018,7 +1018,7 @@ iframe {
 
 .fon_from {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background: url("../IMG/form.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;

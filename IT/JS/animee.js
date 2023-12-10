@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 2:
                 return [2, 3, 6, 8];
             case 3:
-                return [1, 2, 3, 4, 5, 7];
+                return [1, 2, 3, 4, 5, 8];
             default:
                 return [];
         }
