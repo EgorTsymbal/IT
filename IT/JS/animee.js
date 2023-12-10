@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const optionsToShow = getOptionsToShow(personCount);
 
         // Проходим по всем вариантам туров и скрываем или показываем их на основе массива optionsToShow
-        for (let i = 0; i <= 8; i++) {
+        for (let i = 1; i <= 8; i++) {
             const option = destinationSelect.querySelector(`option[value="tour${i}"]`);
             option.style.display = optionsToShow.includes(i) ? 'block' : 'none';
         }
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Возвращаем соответствующий массив вариантов в зависимости от количества людей
         switch (personCount) {
             case 1:
-                return [1, 2, 3, 5];
+                return [1, 2, 3, 5, 8];
             case 2:
                 return [2, 3, 6, 8];
             case 3:
