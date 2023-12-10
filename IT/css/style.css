@@ -995,9 +995,10 @@ iframe {
     transition: opacity .1s linear;
 }
 
+
 .trans__text {
     width: 100%;
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-weight: 500;
@@ -1009,7 +1010,7 @@ iframe {
     transform: translate3d(0, -50%, 0);
 
     opacity: 0;
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: opacity .1s linear;
 }
 
