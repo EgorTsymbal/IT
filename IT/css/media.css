@@ -1,3 +1,192 @@
+@media only screen and (min-width: 1600px) {
+    .intro h1,
+    .intro p {
+        top: 25%;
+        left: 10%;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+        left: 5%;
+        top: 30%;
+    }
+
+    .intro p {
+        font-size: 34px;
+        left: 17%;
+        top: 45%;
+    }
+
+    /* Стили для адаптации на меньших экранах */
+
+    .header__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-bottom: 30%;
+        margin-left: 0;
+    }
+
+    .logo {
+        font-size: 100px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .nav__link {
+        margin: 6px;
+        padding: 8px 16px;
+    }
+
+    .music {
+        top: 20px;
+        right: 20px;
+    }
+
+
+
+
+    .about__item {
+        width: 760px;
+        margin-bottom: 30px;
+    }
+
+    /* Адаптация для блока "second__page" */
+
+    .second__page {
+       height: auto;
+    }
+
+    .about__img img {
+        width: 760px;
+    }
+
+
+
+    .containe_v {
+        width: 760px;
+        height: 100vh;
+        margin: auto;
+    }
+
+    /* Адаптация для блока "third__page" */
+    
+    .third__page {
+       height: auto;
+    }
+
+    .about__pt img {
+        width: 760px;
+    }
+
+    .about__per {
+        width: 760px;
+        margin-bottom: 10px;
+    }
+
+    /* Адаптация для блока "fourth__page" */
+
+    .text.bottom-left {
+        font-size: 15px;
+        width: 350px;
+        height: 300px;
+        left: -1%;
+        margin-top: 20%;
+    }
+
+    .text.top-right {
+        font-size: 15px;
+        width: 340px;
+        height: 250px;
+        right: -1%;
+        margin-top: 1%;
+    }
+    
+    /* Адаптация для блока "fifth__page" */
+
+    .fifth__subtitle {
+        font-size: 40px;
+        top: 0;
+    }
+
+    .route-description p {
+        font-size: 28px;
+    }
+
+    .route-image{
+        max-width: 75%;
+        margin: auto;
+    }
+
+    
+
+    /* Адаптация для блока "sixth__page" */
+
+    .sixth__page {
+        height: auto;
+    }
+
+    .sixth__subtitle {
+        font-size: 22px;
+    }   
+    
+    .person {
+        width: 760px;
+        margin-bottom: 10px;
+    }
+
+    .about__self img{
+         width: 760px;
+     }
+ 
+
+    .map {
+        /* обновить ссылку чтоб карта была меньше */
+    }
+    
+    .map iframe {
+        max-width: 1250px;
+    }
+
+
+
+    /* Адаптация для блока "trans__page" */
+
+    .trans__page {
+        height: auto;
+    }
+
+    .trans__item {
+        width: 760px;
+        margin-bottom: 10px;
+    }
+
+    .trans__img img {
+        width: 760px; /* Тогда не будет на весь экран */
+        /* P.s. Так даже лучше */
+    }   
+
+    .fon_from {
+        height: auto;
+    }
+
+    .container__form {
+        margin: auto;
+    }
+
+    /* Адаптация для блока "section section--contacts" */
+
+    .contacts__link {
+        font-size: 15px;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     .intro h1,
     .intro p {
@@ -801,7 +990,6 @@
     }
 }
 
-
 @media only screen and (max-width: 920px) {
     .intro h1,
     .intro p {
@@ -1018,7 +1206,6 @@
         font-size: 15px;
     }
 }
-
 
 @media only screen and (max-width: 780px) {
     .intro h1,
